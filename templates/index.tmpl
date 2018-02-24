@@ -1,9 +1,0 @@
-{% include "upload_file_form.tmpl" %}
-<h1>Галлерея</h1>
-<div class="gallery">
-    {% for image in images %}
-        <div class="item" data-id-img="{{ image.getIdImg() }}">
-            <a href="/photo/{{ image.getIdImg() }}"><img src="{{ image.getSmallPath() }}" alt=""></a>
-        </div>
-    {% endfor %}
-</div>
