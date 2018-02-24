@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Галерея</title>
+    <style>
+        .gallery{
+            width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: lightgray;
+
+        }
+        .item{
+            margin: 10px;
+        }
+        .item img:hover{
+            filter: saturate(10);
+            transition: filter 500ms;
+        }
+    </style>
+</head>
+<body>
+
+<a href="/">Домой</a><br><hr>
+
+
+    {% include page %}
+
+
+
+</body>
+</html>
